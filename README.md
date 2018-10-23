@@ -3,8 +3,7 @@
 An baseline implementation for searching timeseries data based on multiple data ranges. Supported modes are StartInclusive, EndInclusive, Inclusive, Overlapped and InProgress.
 The underying query language will be SQL92 but would work with any language.
 
-Source from OSISoft SDK Reference:<br>
-https://techsupport.osisoft.com/Documentation/PI-AF-SDK/html/T_OSIsoft_AF_Asset_AFSearchMode.htm
+![](search-mode.png)
 
 ## Setup Database
 
@@ -79,3 +78,8 @@ public void SearchStartingBetweenTest()
     }
 }
 ```
+
+## References
+
+- OSISoft SDK Reference:<br>
+https://techsupport.osisoft.com/Documentation/PI-AF-SDK/html/T_OSIsoft_AF_Asset_AFSearchMode.htm
