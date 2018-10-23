@@ -1,13 +1,17 @@
-# code4fun-advanced-daterange-search
+# Search timeseries data based on date range
 
-An baseline implementation for searching timeseries data based on multiple data ranges. Supported modes are StartInclusive, EndInclusive, Inclusive, Overlapped and InProgress.
-The underying query language will be SQL92 but would work with any language.
+An baseline implementation for searching timeseries data based on multiple data ranges. Supported modes are StartInclusive, EndInclusive, Inclusive, Overlapped and InProgress. This could be helpful when we run rolling window functions such as calculating average for all rows overlapping a rolling period.
+
+The underying query language will be ANSI-SQL92 but would work with any language.
 
 ![](search-mode.png)
 
 ## Setup Database
 
 ```sql
+CREATE DATABASE [SEARCHDATAL];
+GO
+
 CREATE TABLE [dbo].[TimeseriesData](
 	[Id] [nvarchar](50) NOT NULL,
 	[StartTimeUtc] [datetime2](7) NOT NULL,
@@ -78,6 +82,10 @@ public void SearchStartingBetweenTest()
     }
 }
 ```
+
+## Next steps
+
+I though it would be helpfu; to support windowing functions such as data that overlaps data before or or data next to it.
 
 ## References
 
