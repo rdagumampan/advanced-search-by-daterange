@@ -6,6 +6,9 @@ The underying query language will be ANSI-SQL92 but would work with any language
 
 ![](search-mode.png)
 
+Ideas were picked-up from OSISoft SDK Reference:<br>
+https://techsupport.osisoft.com/Documentation/PI-AF-SDK/html/T_OSIsoft_AF_Asset_AFSearchMode.htm
+
 ## Setup Database
 
 ```sql
