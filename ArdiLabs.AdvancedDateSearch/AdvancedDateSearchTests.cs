@@ -53,7 +53,7 @@ namespace ArdiLabs.AdvancedDateSearch
         }
 
         [TestMethod]
-        public void SearchStartingBetweenTest()
+        public void StartInclusiveTest()
         {
             var startTimeUtc = new DateTime(2018, 01, 12, 0, 0, 0, DateTimeKind.Utc);
             var endTimeUtc = new DateTime(2018, 01, 20, 0, 0, 0, DateTimeKind.Utc);
@@ -80,7 +80,7 @@ namespace ArdiLabs.AdvancedDateSearch
         }
 
         [TestMethod]
-        public void EndingBetweenTest()
+        public void EndInclusiveTest()
         {
             var startTimeUtc = new DateTime(2018, 01, 12, 0, 0, 0, DateTimeKind.Utc);
             var endTimeUtc = new DateTime(2018, 01, 20, 0, 0, 0, DateTimeKind.Utc);
@@ -108,7 +108,7 @@ namespace ArdiLabs.AdvancedDateSearch
 
 
         [TestMethod]
-        public void EntirelyBetweenTest()
+        public void InclusiveTest()
         {
             var startTimeUtc = new DateTime(2018, 01, 12, 0, 0, 0, DateTimeKind.Utc);
             var endTimeUtc = new DateTime(2018, 01, 20, 0, 0, 0, DateTimeKind.Utc);
@@ -135,7 +135,7 @@ namespace ArdiLabs.AdvancedDateSearch
         }
 
         [TestMethod]
-        public void ActiveBetweenTest()
+        public void OverlappedTest()
         {
             var startTimeUtc = new DateTime(2018, 01, 12, 0, 0, 0, DateTimeKind.Utc);
             var endTimeUtc = new DateTime(2018, 01, 20, 0, 0, 0, DateTimeKind.Utc);
@@ -162,7 +162,7 @@ namespace ArdiLabs.AdvancedDateSearch
         }
 
         [TestMethod]
-        public void StartingBetweenAndInProgressTest()
+        public void InProgressTest()
         {
             var startTimeUtc = new DateTime(2018, 01, 12, 0, 0, 0, DateTimeKind.Utc);
             var endTimeUtc = new DateTime(2018, 01, 20, 0, 0, 0, DateTimeKind.Utc);
